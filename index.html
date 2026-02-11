@@ -85,7 +85,8 @@
             const yourName = document.getElementById('yourName').value;
             const baeName = document.getElementById('baeName').value;
             if (yourName && baeName) {
-                const link = `valentine.html?from=${encodeURIComponent(yourName)}&to=${encodeURIComponent(baeName)}`;
+                const baseURL = "https://frozenkobra1.github.io/val-inv/valentine.html";
+                const link = `${baseURL}?from=${encodeURIComponent(yourName)}&to=${encodeURIComponent(baeName)}`;
                 document.getElementById('linkField').value = link;
                 document.getElementById('generatedLink').style.display = 'block';
             } else {
